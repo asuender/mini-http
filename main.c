@@ -15,7 +15,7 @@ void error_exit(const char *msg) {
 }
 
 #define PORT 8080
-#define SERVER_RESPONSE "HTTP/1.1 501 Not Implemented\n"
+#define SERVER_RESPONSE "HTTP/1.1 501 Not Implemented\nConnection: close\n"
 
 int main(int argc, char *argv[]) {
   int sockfd, acc_sockfd, n;
